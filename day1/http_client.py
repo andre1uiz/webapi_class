@@ -4,7 +4,7 @@ import socket
 
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-client.connect(("example.com", 80))
+client.connect(("localhost", 8000))
 
 #request
 cmd = "GET http://example.com/index.html HTTP/1.0\r\n\r\n".encode()
